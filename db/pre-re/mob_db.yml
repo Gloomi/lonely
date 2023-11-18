@@ -20637,8 +20637,6 @@ Body:
         Rate: 3200
       - Item: Dullahan_Armor
         Rate: 4850
-      - Item: An_Eye_Of_Dullahan
-        Rate: 1
       - Item: Manteau
         Rate: 13
       - Item: Manteau_
@@ -25885,8 +25883,6 @@ Body:
       - Item: Gladius_
         Rate: 10
       - Item: Chain_Mail_
-        Rate: 2
-      - Item: Ring_Of_Rogue
         Rate: 2
       - Item: Coward_
         Rate: 10
