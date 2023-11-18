@@ -3972,8 +3972,6 @@ Body:
         Rate: 1000
       - Item: Grasshopper_Doll
         Rate: 1500
-      - Item: Angel's_Arrival
-        Rate: 1000
       - Item: Center_Potion
         Rate: 700
       - Item: Guitar_Of_Gentle_Breeze
@@ -4021,8 +4019,6 @@ Body:
         Rate: 100
       - Item: Detrimindexta
         Rate: 100
-      - Item: Kiss_Of_Angel
-        Rate: 1000
       - Item: Toad_Card
         Rate: 1
         StealProtected: true
@@ -4059,8 +4055,6 @@ Body:
       - Item: Unripe_Apple
         Rate: 50
       - Item: Scarlet_Jewel
-        Rate: 1000
-      - Item: Angel's_Safeguard
         Rate: 1000
       - Item: Apple
         Rate: 8000
@@ -4155,8 +4149,6 @@ Body:
         Rate: 1500
       - Item: Star_Dust_Blade
         Rate: 100
-      - Item: Angel's_Warmth
-        Rate: 1000
       - Item: Red_Jewel
         Rate: 10
       - Item: Monster_Juice
@@ -4204,8 +4196,6 @@ Body:
         Rate: 30
       - Item: Rainbow_Carrot
         Rate: 50
-      - Item: Angel's_Protection
-        Rate: 1000
       - Item: Eclipse_Card
         Rate: 1
         StealProtected: true
@@ -7033,8 +7023,6 @@ Body:
         Rate: 500
       - Item: Stiletto_
         Rate: 150
-      - Item: Undershirt
-        Rate: 100
       - Item: Pasana_Card
         Rate: 1
         StealProtected: true
@@ -9156,8 +9144,6 @@ Body:
         Rate: 1800
       - Item: Oridecon
         Rate: 150
-      - Item: Electric_Wire
-        Rate: 100
       - Item: Phendark_Card
         Rate: 1
         StealProtected: true
@@ -17476,8 +17462,6 @@ Body:
         Rate: 2
       - Item: Cyfar
         Rate: 2200
-      - Item: Shinobi's_Sash
-        Rate: 100
       - Item: Thief_Clothes_
         Rate: 1
       - Item: Black_Mask
@@ -20539,8 +20523,6 @@ Body:
         Rate: 2500
       - Item: Wind_Sprits_Armor
         Rate: 2500
-      - Item: Bloody_Iron_Ball
-        Rate: 4000
       - Item: Large_Jellopy
         Rate: 10000
       - Item: Holy_Guard
@@ -26626,8 +26608,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Hyper_Changer
-        Rate: 10
       - Item: Oridecon
         Rate: 10
       - Item: Imperial_Cooking_Kits
@@ -26673,8 +26653,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Hyper_Changer
-        Rate: 10
       - Item: Oridecon
         Rate: 10
       - Item: Imperial_Cooking_Kits
@@ -26876,8 +26854,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Hyper_Changer
-        Rate: 10
       - Item: Elunium
         Rate: 10
       - Item: High_end_Cooking_Kits
@@ -26923,8 +26899,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Hyper_Changer
-        Rate: 10
       - Item: Elunium
         Rate: 10
       - Item: High_end_Cooking_Kits
@@ -27722,8 +27696,6 @@ Body:
         Rate: 50
       - Item: Bloody_Page
         Rate: 500
-      - Item: Vidar's_Boots
-        Rate: 10
       - Item: Cookbook08
         Rate: 2
       - Item: Cookbook09
@@ -27771,8 +27743,6 @@ Body:
         Rate: 5
       - Item: Manteau_
         Rate: 1
-      - Item: Fricco_Shoes
-        Rate: 10
       - Item: Gold_Ring
         Rate: 100
       - Item: Ancient_Mimic_Card
@@ -28014,8 +27984,6 @@ Body:
         Rate: 10000
       - Item: Old_Card_Album
         Rate: 10
-      - Item: Goibne's_Shoulder_Arms
-        Rate: 1000
       - Item: Tha_Odium_Card
         Rate: 1
         StealProtected: true
@@ -28061,8 +28029,6 @@ Body:
         Rate: 10000
       - Item: Old_Card_Album
         Rate: 10
-      - Item: Goibne's_Combat_Boots
-        Rate: 1000
       - Item: Tha_Despero_Card
         Rate: 1
         StealProtected: true
@@ -28108,8 +28074,6 @@ Body:
         Rate: 10000
       - Item: Old_Card_Album
         Rate: 10
-      - Item: Goibne's_Armor
-        Rate: 1000
       - Item: Tha_Maero_Card
         Rate: 1
         StealProtected: true
@@ -28155,8 +28119,6 @@ Body:
         Rate: 10000
       - Item: Old_Card_Album
         Rate: 10
-      - Item: Goibne's_Helmet
-        Rate: 1000
       - Item: Tha_Dolor_Card
         Rate: 1
         StealProtected: true
@@ -28204,18 +28166,12 @@ Body:
     Drops:
       - Item: Treasure_Box
         Rate: 1000
-      - Item: Morrigane's_Manteau
-        Rate: 1000
       - Item: Piece_Of_Bone_Armor
         Rate: 5000
       - Item: Full_Plate_Armor_
         Rate: 5000
       - Item: Grave_
         Rate: 5000
-      - Item: Wing_Of_Eagle
-        Rate: 1000
-      - Item: Bloody_Iron_Ball
-        Rate: 500
       - Item: Thanatos_Card
         Rate: 1
         StealProtected: true
@@ -28412,8 +28368,6 @@ Body:
         Rate: 800
       - Item: Emperium
         Rate: 5
-      - Item: Stone_Buckler
-        Rate: 50
       - Item: Acidus_Card
         Rate: 1
         StealProtected: true
@@ -28458,8 +28412,6 @@ Body:
         Rate: 800
       - Item: Flame_Heart
         Rate: 20
-      - Item: Magni_Cap
-        Rate: 50
       - Item: Ferus_Card
         Rate: 1
         StealProtected: true
@@ -28671,10 +28623,6 @@ Body:
       - Item: Crystal_Jewel__
         Rate: 2000
     Drops:
-      - Item: Morpheus's_Armlet
-        Rate: 1000
-      - Item: Morpheus's_Ring
-        Rate: 1000
       - Item: Treasure_Box
         Rate: 5000
       - Item: Scale_Of_Red_Dragon
@@ -28725,14 +28673,8 @@ Body:
         Rate: 4000
       - Item: Tri_Headed_Dragon_Head
         Rate: 3880
-      - Item: Morpheus's_Hood
-        Rate: 500
-      - Item: Morrigane's_Helm
-        Rate: 500
       - Item: Vit_Dish10
         Rate: 300
-      - Item: Fricca_Circlet
-        Rate: 500
       - Item: Hydro_Card
         Rate: 1
         StealProtected: true
@@ -29141,16 +29083,12 @@ Body:
         Rate: 3000
       - Item: Old_Violet_Box
         Rate: 3000
-      - Item: Morrigane's_Pendant
-        Rate: 1000
       - Item: Glittering_Clothes
         Rate: 1000
       - Item: Survival_Rod_
         Rate: 500
       - Item: Counter_Dagger
         Rate: 500
-      - Item: Morrigane's_Belt
-        Rate: 1000
       - Item: Kiel_Card
         Rate: 1
         StealProtected: true
@@ -29198,8 +29136,6 @@ Body:
         Rate: 5
       - Item: Elunium
         Rate: 10
-      - Item: Vali's_Manteau
-        Rate: 20
       - Item: Alicel_Card
         Rate: 1
         StealProtected: true
@@ -29239,8 +29175,6 @@ Body:
         Rate: 2000
       - Item: Sturdy_Iron_Piece
         Rate: 3000
-      - Item: Falcon_Robe
-        Rate: 10
       - Item: Screw
         Rate: 500
       - Item: Claw_
@@ -29284,8 +29218,6 @@ Body:
     Drops:
       - Item: Brigan
         Rate: 4000
-      - Item: Morpheus's_Shawl
-        Rate: 10
       - Item: Rosary_
         Rate: 10
       - Item: Alice's_Apron
@@ -29864,8 +29796,6 @@ Body:
         Rate: 1000
       - Item: Silk_Robe_
         Rate: 100
-      - Item: Odin's_Blessing
-        Rate: 100
       - Item: Skeggiold_Card
         Rate: 1
         StealProtected: true
@@ -29911,8 +29841,6 @@ Body:
       - Item: Rune_Of_Darkness
         Rate: 1000
       - Item: Silk_Robe_
-        Rate: 100
-      - Item: Odin's_Blessing
         Rate: 100
       - Item: Skeggiold_Card
         Rate: 1
@@ -30208,8 +30136,6 @@ Body:
         Rate: 500
       - Item: Old_Violet_Box
         Rate: 100
-      - Item: Valkyrja's_Shield
-        Rate: 500
   - Id: 1766
     AegisName: EM_ANGELING
     Name: Angeling
@@ -31096,8 +31022,6 @@ Body:
         Rate: 5000
       - Item: Yggdrasilberry
         Rate: 5000
-      - Item: Ulle_Cap
-        Rate: 100
       - Item: Atroce_Card
         Rate: 1
         StealProtected: true
@@ -36012,8 +35936,6 @@ Body:
         Rate: 7000
       - Item: Tae_Goo_Lyeon
         Rate: 5000
-      - Item: Bloody_Iron_Ball
-        Rate: 100
       - Item: Celestial_Robe
         Rate: 7000
       - Item: Holy_Robe
