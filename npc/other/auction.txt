@@ -18,7 +18,7 @@
 
 // Auction House warpers
 //============================================================
-moc_ruins,78,173,6	script	Auction Hall Guide#moc	98,{
+morocc,182,95,6	script	Auction Hall Guide#moc	98,{
 	callfunc "F_AuctionWarper",1;
 }
 
@@ -80,7 +80,7 @@ function	script	F_AuctionWarper	{
 	close;
 }
 
-moc_ruins,76,176,6	duplicate(AuctionSign)	Information Post#moc	837
+morocc,180,97,6	duplicate(AuctionSign)	Information Post#moc	837
 prontera,216,120,4	duplicate(AuctionSign)	Information Post#prt	837
 yuno,131,116,0	duplicate(AuctionSign)	Information Post#yuno	837
 lighthalzen,207,169,6	duplicate(AuctionSign)	Information Post#lhz	837

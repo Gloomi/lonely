@@ -838,6 +838,7 @@ OnDisable:
 }
 */
 
+/*
 yuno_in04,180,106,3	script	Reading Girl#moc_girl1	73,{
 	mes "[" + strcharinfo(0) + "]";
 	mes "Excuse me, but may I ask";
@@ -888,9 +889,11 @@ que_job01,70,84,1	script	Girl#moc_ex002	882,{
 	mes "Good heavens.. I can't believe this young girl's drinking with sadness....";
 	close;
 }
+*/
 
 // Resurrection of Satan Morocc
 // ============================================================
+/*
 moc_fild20,354,183,3	script	Continental Guard#01::MocConGuard	707,3,3,{
 	if ((rebirth_moc_edq == 0) && (rebirth_moc_edq < 4)) {
 		mes "[Continental Guard]";
@@ -2083,9 +2086,11 @@ sec_in02,14,43,5	script	Morocc GlobalVar Admin::MoroccAdmin_sec	971,{
 	}
 }
 moc_fild21,5,5,5	duplicate(MoroccAdmin_sec)	Morocc GlobalVar Admin::MoroccAdmin_moc	971
+*/
 
 // The Crow of the Fate
 // ============================================================
+/*
 moc_ruins,137,70,3	script	Book-Touching Man#garas	48,{
 	if (BaseLevel > 59) {
 		if (checkweight(703,3) == 0) {
@@ -4301,3 +4306,4 @@ cave,105,32,7	script	Cave Settler#f_cave7	979,{
 	mes "(Whisper)";
 	close;
 }
+*/

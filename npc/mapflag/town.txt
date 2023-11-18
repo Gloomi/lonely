@@ -9,7 +9,7 @@
 
 prontera	mapflag	town
 izlude	mapflag	town
-moc_ruins	mapflag	town
+morocc	mapflag	town
 geffen	mapflag	town
 payon	mapflag	town
 pay_arche	mapflag	town
