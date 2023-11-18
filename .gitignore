@@ -75,6 +75,9 @@ Thumbs.db
 /log/*.log
 /log/*.leaks
 
+# /sql-files/
+sql-files/custom/
+
 # /src/char/
 /src/char/Makefile
 /src/char/obj_sql

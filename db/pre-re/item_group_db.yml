@@ -11079,3 +11079,51 @@ Body:
             Item: E_Giant_Fly_Wing
           - Index: 2
             Item: F_Giant_Fly_Wing
+  - Group: REWARDBOX
+    SubGroups:
+      - SubGroup: 1
+        List:
+          - Index: 0
+            Item: Battle_Manual
+            Rate: 3
+          - Index: 1
+            Item: HE_Bubble_Gum
+            Rate: 1
+      - SubGroup: 2
+        List:
+          - Index: 0
+            Item: Battle_Manual
+            Rate: 8
+          - Index: 1
+            Item: Max_Weight_Up_Scroll
+            Rate: 8
+          - Index: 2
+            Item: HE_Bubble_Gum
+            Rate: 8
+          - Index: 3
+            Item: Kafra_Card
+            Rate: 8
+          - Index: 4
+            Item: Token_Of_Siegfried
+            Rate: 8
+          - Index: 5
+            Item: Convex_Mirror
+            Rate: 8
+          - Index: 6
+            Item: Insurance
+            Rate: 8
+          - Index: 7
+            Item: Elite_Siege_Supply_Box
+            Rate: 6
+          - Index: 8
+            Item: Enriched_Elunium
+            Rate: 6
+          - Index: 9
+            Item: Enriched_Oridecon
+            Rate: 6
+          - Index: 10
+            Item: Rare_Coin
+            Rate: 4
+          - Index: 11
+            Item: Lonely_Coin
+            Rate: 1
