@@ -14,8 +14,8 @@
 
 y_airport,143,43,5	script	Airport Staff#y_air1a::y_airport1	90,{
 	mes "[Airport Staff]";
-	mes "Welcome to Juno Airport where we offer domestic flights to Einbroch, Lighthalzen and Hugel,";
-	mes "and international flights to Izlude.";
+	mes "Welcome to Juno Airport where we offer domestic flights to Einbroch and";
+	mes "Lighthalzen, and international flights to Izlude.";
 	mes "How may I be of service?";
 	next;
 	if (select("Board the Airship.:Cancel.") == 1) {
@@ -84,9 +84,9 @@ y_airport,158,50,3	duplicate(y_airport2)	Arrival Staff#y_air2c	90
 y_airport,145,63,5	script	Domestic Boarding	91,{
 	mes "[Boarding Staff]";
 	mes "Would you like to board the";
-	mes "Airship that flies to Einbroch,";
-	mes "Lighthalzen and Hugel? If so,";
-	mes "please let me guide you to that";
+	mes "Airship that flies to Einbroch";
+	mes "and Lighthalzen? If so, please";
+	mes "let me guide you to that";
 	mes "Airship's boarding area.";
 	next;
 	if (select("Yes:No") == 1) {
@@ -145,8 +145,8 @@ yuno,88,263,3	script	Airship Staff#yuno02	91,{
 	mes "Welcome to Juno Airport.";
 	mes "Please use this door to";
 	mes "board the Airship which stops";
-	mes "over Einbroch, Lighthalzen and";
-	mes "Hugel in the Schwarzwald Republic.";
+	mes "over Einbroch and Lighthalzen";
+	mes "in the Schwarzwald Republic.";
 	next;
 	mes "[Airship Staff]";
 	mes "Otherwise, if Juno is";

@@ -11128,8 +11128,6 @@ Body:
         Rate: 5
       - Item: Scell
         Rate: 3500
-      - Item: Branch
-        Rate: 5
       - Item: Oridecon_Stone
         Rate: 87
       - Item: Cruiser_Card
@@ -12629,8 +12627,6 @@ Body:
         Rate: 55
       - Item: Coal
         Rate: 320
-      - Item: The_Garrison
-        Rate: 5
       - Item: Elunium_Stone
         Rate: 124
       - Item: Steam_Goblin_Card
@@ -13910,8 +13906,6 @@ Body:
         Rate: 360
       - Item: Coal
         Rate: 580
-      - Item: Butcher
-        Rate: 5
       - Item: Flame_Heart
         Rate: 160
       - Item: Panzer_Goblin_Card
@@ -14252,8 +14246,6 @@ Body:
         Rate: 1280
       - Item: Zargon
         Rate: 1240
-      - Item: Huuma_Bird_Wing
-        Rate: 5
       - Item: Old_Blue_Box
         Rate: 1
       - Item: Assulter_Card
@@ -15910,8 +15902,6 @@ Body:
         Rate: 2200
       - Item: Elunium
         Rate: 5
-      - Item: Destroyer_
-        Rate: 1
       - Item: Manteau_
         Rate: 20
       - Item: Steel
@@ -17561,8 +17551,6 @@ Body:
         Rate: 350
       - Item: Panacea
         Rate: 250
-      - Item: The_Cyclone_
-        Rate: 5
       - Item: Antique_Firelock_Card
         Rate: 1
         StealProtected: true
@@ -17651,12 +17639,8 @@ Body:
         Rate: 3500
       - Item: Broken_Wine_Vessel
         Rate: 5500
-      - Item: Huuma_Giant_Wheel
-        Rate: 5
       - Item: Fruit_Of_Mastela
         Rate: 150
-      - Item: Huuma_Giant_Wheel_
-        Rate: 5
       - Item: Imperial_Cooking_Kits
         Rate: 20
       - Item: Earth_Scroll_1_5
@@ -20132,8 +20116,6 @@ Body:
         Rate: 4500
       - Item: Steel
         Rate: 6305
-      - Item: Huuma_Blaze
-        Rate: 7500
       - Item: Azoth
         Rate: 80
       - Item: Incant_Samurai_Card
@@ -24036,8 +24018,6 @@ Body:
         Rate: 1000
       - Item: Screw
         Rate: 200
-      - Item: Crimson_Bolt_
-        Rate: 5
       - Item: Jubilee
         Rate: 5000
       - Item: Metaling_Card
@@ -24442,8 +24422,6 @@ Body:
         Rate: 1000
       - Item: Oridecon_Hammer
         Rate: 300
-      - Item: Gold_Lux
-        Rate: 5
       - Item: Angry_Mouth
         Rate: 50
       - Item: Cursed_Lucky_Brooch
@@ -24684,8 +24662,6 @@ Body:
         Rate: 5000
       - Item: Super_Novice_Hat_
         Rate: 50
-      - Item: Six_Shooter_
-        Rate: 5
       - Item: Mole_Card
         Rate: 1
         StealProtected: true
@@ -26328,8 +26304,6 @@ Body:
         Rate: 1000
       - Item: Sticky_Mucus
         Rate: 1000
-      - Item: Destroyer
-        Rate: 5
   - Id: 1666
     AegisName: POTON_CANON_2
     Name: Photon Cannon
@@ -26438,10 +26412,6 @@ Body:
         Rate: 200
       - Item: Elunium
         Rate: 200
-      - Item: Gate_Keeper
-        Rate: 5
-      - Item: Gate_KeeperDD
-        Rate: 5
       - Item: Archdam_Card
         Rate: 1
         StealProtected: true
@@ -26514,8 +26484,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Dusk
-        Rate: 5
       - Item: Oridecon
         Rate: 10
       - Item: Imperial_Cooking_Kits
@@ -26561,8 +26529,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Thunder_P_
-        Rate: 10
       - Item: Oridecon
         Rate: 10
       - Item: Imperial_Cooking_Kits
@@ -26760,8 +26726,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Drifter
-        Rate: 5
       - Item: Elunium
         Rate: 10
       - Item: High_end_Cooking_Kits
@@ -26807,8 +26771,6 @@ Body:
         Rate: 300
       - Item: Mystery_Piece
         Rate: 300
-      - Item: Long_Barrel_
-        Rate: 10
       - Item: Elunium
         Rate: 10
       - Item: High_end_Cooking_Kits
@@ -26982,8 +26944,6 @@ Body:
         Rate: 3000
       - Item: Old_Blue_Box
         Rate: 1000
-      - Item: Butcher_
-        Rate: 5
       - Item: Yellow_Slim_Potion
         Rate: 500
       - Item: White_Slim_Potion
@@ -32768,8 +32728,6 @@ Body:
     Drops:
       - Item: Hot_Hair
         Rate: 3000
-      - Item: Huuma_Blaze
-        Rate: 3
       - Item: Live_Coal
         Rate: 2500
       - Item: Flaming_Ice
@@ -37541,10 +37499,6 @@ Body:
         Rate: 200
       - Item: Elunium
         Rate: 200
-      - Item: Gate_Keeper
-        Rate: 5
-      - Item: Gate_KeeperDD
-        Rate: 5
       - Item: Improved_Tights
         Rate: 10
   - Id: 1980

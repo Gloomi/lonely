@@ -55,30 +55,16 @@
 //= 3.7 Modified the quest to renewal. [Vali] (Thanks to Muad_Dib for the necessary info).
 //============================================================
 
-// Notices in the old Hunter Guild.
+// Guildsman: Warps you to guild
 //============================================================
-in_hunter,99,99,4	script	Hunter Info#hnt::HntNotice	727,{
-	mes "============ Notice ============";
-	mes "We would like to inform that the Hunter Job Change Location";
-	mes "has been moved to ^ff0000Hugel^000000 in the Schwarzwald Republic.";
-	next;
-	mes "You can now use the Hugel airline, so please use the airship to visit Hugel.";
-	next;
-	mes "You will find the new Job Change Location at ^ff0000 Hugel 208 222 ^000000.";
-	next;
-	mes "^804000(You found a tiny line written at the end of the notice.)^000000";
-	mes " ";
-	mes " ";
-	mes " ";
-	mes "I, the Falcon breeder have moved out as well.";
-	close;
+pay_fild10,148,251,4	script	Hunter Guildsman	98,{
+	warp "in_hunter",100,18;
+	end;
 }
-
-pay_fild10,148,252,3	duplicate(HntNotice)	Job Change Location#hu	857
 
 // Actual Job quest start
 //============================================================
-hu_in01,386,373,4	script	Hunter Guildsman#hnt	727,{
+in_hunter,99,99,4	script	Hunter Guildsman#hnt	727,{
 	if (Upper == 1) {
 		mes "[Hunter Sherin]";
 		mes "Oh, how have you been? It's been a long time, hasn't it?";
@@ -417,7 +403,7 @@ hu_in01,386,373,4	script	Hunter Guildsman#hnt	727,{
 		}
 		else if (HNTR_Q > 2 && HNTR_Q < 10) {
 			mes "[Hunter Sherin]";
-			mes "Just give the item to the Demon Hunter, the guy who's all the way to the left in this area~";
+			mes "Just give the item to the Demon Hunter over there to your left~";
 			next;
 			mes "[Hunter Sherin]";
 			if (Sex == SEX_MALE)
@@ -431,7 +417,7 @@ hu_in01,386,373,4	script	Hunter Guildsman#hnt	727,{
 			mes "????";
 			next;
 			mes "[Hunter Sherin]";
-			mes "You weren't able to find the Demon Hunter? That guy is just to the left! Hehe~";
+			mes "You weren't able to find the Demon Hunter? That guy is just on your left! Hehe~";
 			next;
 			mes "[Hunter Sherin]";
 			mes "I want to see you become a Hunter...! Waaah~ I think you'd look great, so please hurry!";
@@ -452,7 +438,7 @@ hu_in01,386,373,4	script	Hunter Guildsman#hnt	727,{
 	close;
 }
 
-hu_in01,382,382,4	script	Guild Receptionist#hnt	732,{
+in_hunter,55,99,5	script	Guild Receptionist#hnt	732,{
 	if (HNTR_Q == 2) {
 		mes "[Guild Receptionist]";
 		mes "Greetings. They call me... ^660000The Demon Hunter^000000. I am the one in charge of processing applications. Your name is ... " + strcharinfo(0) + ", correct?";
@@ -466,7 +452,7 @@ hu_in01,382,382,4	script	Guild Receptionist#hnt	732,{
 				mes "[Demon Hunter]";
 				mes "Leave if you plan to trifle me your petty tricks. Do you not realize that you are toying with ^660000The Demon Hunter^000000?!'";
 				close2;
-				warp "hugel",208,223;
+				warp "pay_fild10",145,250;
 				end;
 			}
 		}
@@ -1272,7 +1258,7 @@ OnTouch_:
 	case 4: mapannounce "job_hunte",strcharinfo(0) + ", has failed me! Go back to where you started!",bc_map; break;
 	case 5: mapannounce "job_hunte",strcharinfo(0) + ", you have blundered into a trap. I'm sorry, but for now, YOU LOSE.",bc_map; break;
 	case 6: mapannounce "job_hunte",strcharinfo(0) + ", what are you doing!? Go back and do it again!",bc_map; break;
-	case 7: mapannounce "job_hunte",strcharinfo(0) + ", come on! You can do better than this!! Try again!",bc_map; break;
+	case 7: mapannounce "job_hunte",strcharinfo(0) + ", come on! You can do better then this!! Try again!",bc_map; break;
 	case 8: mapannounce "job_hunte",strcharinfo(0) + ", has fallen into a trap...again. But don't worry, you're getting better.",bc_map; break;
 	case 9: mapannounce "job_hunte",strcharinfo(0) + ", fail, fail, fail... Go back to where you started!",bc_map; break;
 	case 10: mapannounce "job_hunte",strcharinfo(0) + "... aww~ Try again! You can do it!",bc_map; break;
