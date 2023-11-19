@@ -1729,8 +1729,6 @@ Body:
         Rate: 1000
       - Item: Spinx_Helm
         Rate: 150
-      - Item: Cakram
-        Rate: 100
       - Item: Osiris_Card
         Rate: 1
         StealProtected: true
@@ -2695,8 +2693,6 @@ Body:
         Rate: 10
       - Item: Elunium
         Rate: 4268
-      - Item: Red_Square_Bag
-        Rate: 100
       - Item: Mistress_Card
         Rate: 1
         StealProtected: true
@@ -3927,8 +3923,6 @@ Body:
         Rate: 1000
       - Item: Elunium
         Rate: 4559
-      - Item: Giant_Axe
-        Rate: 100
       - Item: Orc_Hero_Card
         Rate: 1
         StealProtected: true
@@ -5069,8 +5063,6 @@ Body:
         Rate: 350
       - Item: Elunium
         Rate: 3200
-      - Item: Krasnaya
-        Rate: 100
       - Item: Drake_Card
         Rate: 1
         StealProtected: true
@@ -5214,8 +5206,6 @@ Body:
         Rate: 250
       - Item: Elunium
         Rate: 2300
-      - Item: Krieg
-        Rate: 100
       - Item: Eddga_Card
         Rate: 1
         StealProtected: true
@@ -6698,8 +6688,6 @@ Body:
         Rate: 10
       - Item: Elunium
         Rate: 3500
-      - Item: Dea_Staff
-        Rate: 100
       - Item: Maya_Card
         Rate: 1
         StealProtected: true
@@ -6851,8 +6839,6 @@ Body:
         Rate: 650
       - Item: Elunium
         Rate: 2600
-      - Item: Staff_Of_Bordeaux
-        Rate: 100
       - Item: Moonlight_Flower_Card
         Rate: 1
         StealProtected: true
@@ -7269,8 +7255,6 @@ Body:
         Rate: 300
       - Item: Elunium
         Rate: 2900
-      - Item: Weihna
-        Rate: 100
       - Item: Phreeoni_Card
         Rate: 1
         StealProtected: true
@@ -8587,8 +8571,6 @@ Body:
         Rate: 1000
       - Item: Elunium
         Rate: 4268
-      - Item: Erde
-        Rate: 3100
       - Item: Orc_Load_Card
         Rate: 1
         StealProtected: true
@@ -12244,8 +12226,6 @@ Body:
     Drops:
       - Item: Bone_Wand
         Rate: 800
-      - Item: Kronos
-        Rate: 100
       - Item: Grimtooth_
         Rate: 300
       - Item: Mage_Coat
@@ -13035,8 +13015,6 @@ Body:
         Rate: 35
       - Item: Gladius
         Rate: 80
-      - Item: Sandstorm
-        Rate: 15
       - Item: Ghost_Bandana
         Rate: 1
       - Item: Skeleton_General_Card
@@ -13180,8 +13158,6 @@ Body:
         Rate: 200
       - Item: Book
         Rate: 8
-      - Item: Icarus_Wing
-        Rate: 5
       - Item: Fruit_Of_Mastela
         Rate: 50
       - Item: Cremy_Fear_Card
@@ -13666,8 +13642,6 @@ Body:
         Rate: 3
       - Item: Scarlet_Jewel
         Rate: 20
-      - Item: Double_Bound
-        Rate: 15
       - Item: Giant_Honet_Card
         Rate: 1
         StealProtected: true
@@ -36161,8 +36135,6 @@ Body:
         Rate: 7275
       - Item: Celestial_Robe
         Rate: 40
-      - Item: Berdysz
-        Rate: 150
         StealProtected: true
   - Id: 1940
     AegisName: TREASURE_BOX43
@@ -36187,8 +36159,6 @@ Body:
         Rate: 4850
       - Item: Elunium
         Rate: 7275
-      - Item: Heart_Breaker
-        Rate: 150
         StealProtected: true
   - Id: 1941
     AegisName: TREASURE_BOX44
@@ -37487,8 +37457,6 @@ Body:
         Rate: 200
       - Item: Elunium
         Rate: 200
-      - Item: Improved_Tights
-        Rate: 10
   - Id: 1980
     AegisName: KUBLIN
     Name: Kublin
@@ -40420,10 +40388,6 @@ Body:
     Drops:
       - Item: Treasure_Box
         Rate: 5000
-      - Item: Hurricane_Fury
-        Rate: 100
-      - Item: Hunting_Spear
-        Rate: 100
       - Item: Yggdrasilberry
         Rate: 500
       - Item: Elunium
