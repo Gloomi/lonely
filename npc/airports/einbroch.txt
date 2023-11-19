@@ -17,8 +17,8 @@ airport,143,43,5	script	Airport Staff#airport1a::airport1	90,{
 	mes "Welcome to the";
 	mes "Einbroch Airport,";
 	mes "where we offer nonstop";
-	mes "flights to the cities of";
-	mes "Juno and Lighthalzen.";
+	mes "flights to the city of";
+	mes "Juno.";
 	next;
 	if (select("Board the Airship:Cancel") == 1) {
 		mes "[Airport Staff]";
@@ -63,8 +63,7 @@ airport,143,49,3	script	Arrival Staff#airport2a::airport2	90,{
 	mes "Welcome to Einbroch Airport.";
 	mes "If you are arriving from your";
 	mes "flight, let me guide you to the";
-	mes "main terminal. Otherwise, please board the Airship to depart to";
-	mes "Juno and Lighthalzen.";
+	mes "main terminal. Otherwise, please board the Airship to depart to Juno.";
 	next;
 	if (select("Exit to main terminal.:Cancel.") == 1) {
 		mes "[Arrival Staff]";
@@ -96,8 +95,7 @@ einbroch,94,267,3	script	Airship Staff#ein01	91,{
 	mes "Einbroch Airport.";
 	mes "Please use this door to";
 	mes "board the Airship which stops";
-	mes "over Juno and Lighthalzen";
-	mes "in the Schwarzwald Republic.";
+	mes "over Juno in the Schwarzwald Republic.";
 	next;
 	mes "[Airship Staff]";
 	mes "Otherwise, if Einbroch is";
