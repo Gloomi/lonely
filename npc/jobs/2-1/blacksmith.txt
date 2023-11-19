@@ -43,7 +43,7 @@
 //= 2.9 Updated with some extra conditions. [Euphy]
 //==============================================================
 
-ein_in01,18,28,4	script	Guildsman#BLS	731,{
+geffen_in,110,169,4	script	Guildsman#BLS	731,{
 	if (Upper == 1) {
 		mes "[Altiregen]";
 		mes "Hey hey. I don't have time for chit-chat, I'm a pretty busy guy. There's all these Merchants working hard to become Blacksmiths.";
@@ -172,7 +172,7 @@ ein_in01,18,28,4	script	Guildsman#BLS	731,{
 					next;
 					mes "[Altiregen]";
 					mes "Hmmm...";
-					mes "One of our Blacksmiths in Einbech, ^8E6B23Geschupenschte^000000 has sent us word that he's short on help. Your first test of character will be to help him out.";
+					mes "One of our Blacksmiths in Alberta, ^8E6B23Geschupenschte^000000 has sent us word that he's short on help. Your first test of character will be to help him out.";
 					next;
 					set BSMITH_Q,1;
 					setquest 2000;
@@ -208,7 +208,7 @@ ein_in01,18,28,4	script	Guildsman#BLS	731,{
 		else if (BSMITH_Q > 0  && BSMITH_Q < 8) {
 			mes "[Altiregen]";
 			mes "You haven't left yet?";
-			mes "Go to Einbech and find ^8E6B23Geschupenschte^000000. Finish helping him out, and when you're done, come back to me.";
+			mes "Go to Alberta and find ^8E6B23Geschupenschte^000000. Finish helping him out, and when you're done, come back to me.";
 			close;
 		}
 		else if (BSMITH_Q > 8 && BSMITH_Q < 15) {
@@ -225,8 +225,7 @@ ein_in01,18,28,4	script	Guildsman#BLS	731,{
 			mes "[Altiregen]";
 			mes "Hm? You look surprised.";
 			mes "I guess you didn't know that there's more than one test. ";
-			mes "Haha, but don't worry, you are not going to travel that far.";
-			mes "Please go talk to the guildsman inside the building for more details about your next test.";
+			mes "The guildsman for the last test is in Morocc, go there now.";
 			next;
 			if (select("I want to change my job quickly! But...oh well.:Grrr! Enough is enough!") == 1) {
 				set BSMITH_Q,16;
@@ -238,7 +237,7 @@ ein_in01,18,28,4	script	Guildsman#BLS	731,{
 				mes "[Altiregen]";
 				mes "If we don't keep our standards,";
 				mes "we won't be able to maintain the respectability of the Blacksmith Guild!";
-				mes "We can't embarass our guild in this manner! *Ahem* Anyway, you talk to the guildsman inside the building now.";
+				mes "We can't embarass our guild in this manner! *Ahem* Anyway, you talk to the guildsman in Morocc now.";
 				close;
 			}
 			mes "[Altiregen]";
@@ -293,7 +292,7 @@ ein_in01,18,28,4	script	Guildsman#BLS	731,{
 	}
 }
 
-ein_in01,201,27,3	script	Guildsman#alberta	63,{
+alberta_in,174,22,4	script	Guildsman#alberta	63,{
 	mes "[Geschupenschte]";
 	mes "Hello there!";
 	mes "I'm ^8E6B23Geschupenschte^000000,";
@@ -718,7 +717,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "to ^8E6B23Wickebine^000000 in Morocc of Rune-Midgarts Kingdom,";
 					break;
 				case 11:
-					mes "Okay, now take this to ^8E6B23Krongast^000000 in Lighthalzen. Simply deliver it and bring me the receipt.";
+					mes "Okay, now take this to ^8E6B23Krongast^000000 in Izlude. Simply deliver it and bring me the receipt.";
 					getitem 1119,1; //Tsurugi
 					if (checkquest(2005) != -1) {
 						changequest 2005,2010;
@@ -768,7 +767,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					mes "to ^8E6B23Talpiz^000000 in Payon of Rune-Midgarts Kindgom,";
 					break;
 				case 13:
-					mes "Okay, now take this to ^8E6B23Bismarc^000000 in Hugel. Simply deliver this and bring back the receipt.";
+					mes "Okay, now take this to ^8E6B23Bismarc^000000 in Comodo. Simply deliver this and bring back the receipt.";
 					getitem 1122,1; //Ring_Pommel_Saber
 					if (checkquest(2007) != -1) {
 						changequest 2007,2012;
@@ -845,13 +844,13 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 				mes "dealer ^8E6B23Wickebine^000000 in Morocc. And don't forget the receipt.";
 			}
 			else if (BSMITH_Q == 11) {
-				mes "In Lighthalzen, 6 o'clock direction from the town center, you will find ^8E6B23Krongast^000000 near the weapon shop. And don't forget the receipt.";
+				mes "In Izlude, 11 o'clock direction from the town center, you will find ^8E6B23Krongast^000000 near the weapon shop. And don't forget the receipt.";
 			}
 			else if (BSMITH_Q == 12) {
 				mes "In Payon, at the 5 o'clock direction from the town center, you will find ^8E6B23Talpiz^000000. And don't forget the receipt.";
 			}
 			else {
-				mes "In Hugel, at the 1 o'clock direction from the town center, you will find ^8E6B23Bismarc^000000 near the airship. And don't forget the receipt.";
+				mes "In Comodo, at the 12 o'clock direction from the town center, you will find ^8E6B23Bismarc^000000. And don't forget the receipt.";
 			}
 			close;
 		}
@@ -890,7 +889,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 					next;
 					mes "[Geschupenschte]";
 					mes "Good job!";
-					mes "Return to ^8E6B23Altiregen^000000 in Einbroch, the guy you first met when you applied for the Blacksmith job.";
+					mes "Return to ^8E6B23Altiregen^000000 in Geffen, the guy you first met when you applied for the Blacksmith job.";
 					next;
 					mes "[Geschupenschte]";
 					mes "I have faith that you";
@@ -925,7 +924,7 @@ ein_in01,201,27,3	script	Guildsman#alberta	63,{
 			mes "Thank you";
 			mes "very much";
 			mes "your help.";
-			mes "Return to Einbroch";
+			mes "Return to Geffen";
 			mes "and see ^8E6B23Altiregen^000000!";
 			close;
 		}
@@ -1060,7 +1059,7 @@ morocc,27,112,4	script	Wickebine#BLS	725,{
 		cutin "Job_Black_hucke01",2;
 		mes "[Wickebine]";
 		mes "Are you with the";
-		mes "Einbroch Blacksmith Guild?";
+		mes "Geffen Blacksmith Guild?";
 		mes "Give this message to Geschupenschte!";
 		next;
 		cutin "Job_Black_hucke03",2;
@@ -1124,7 +1123,7 @@ morocc,27,112,4	script	Wickebine#BLS	725,{
 	}
 }
 
-lighthalzen,209,80,4	script	Krongast#BLS	734,{
+izlude,69,181,4	script	Krongast#BLS	734,{
 	if (BSMITH_Q == 11 && countitem(1119) > 0) {
 		mes "[Krongast]";
 		mes "Ohhhhhh~";
@@ -1172,7 +1171,7 @@ lighthalzen,209,80,4	script	Krongast#BLS	734,{
 		mes "your receipt.";
 		mes "Thank you for";
 		mes "your business!";
-		mapannounce "lighthalzen",strcharinfo(0)+"... Thank you for the delivery.",bc_map;
+		mapannounce "izlude",strcharinfo(0)+"... Thank you for the delivery.",bc_map;
 		close;
 	}
 	else if (BSMITH_Q == 14) {
@@ -1276,7 +1275,7 @@ payon,214,79,4	script	Talpiz#BLS	59,{
 	}
 }
 
-hugel,168,183,1	script	Bismarc#BLS	118,{
+comodo,158,342,4	script	Bismarc#BLS	118,{
 	if (BSMITH_Q == 13 && countitem(1122) > 0) {
 		mes "[Bismarc]";
 		mes "Sweet God...";
@@ -1343,7 +1342,7 @@ hugel,168,183,1	script	Bismarc#BLS	118,{
 		mes "your receipt.";
 		mes "T-take it...!";
 		mes "It's yours!";
-		mapannounce "hugel","Thanks, " +strcharinfo(0)+ ", for the delivery. You saved my life...",bc_map;
+		mapannounce "comodo","Thanks, " +strcharinfo(0)+ ", for the delivery. You saved my life...",bc_map;
 		close;
 	}
 	else if (BSMITH_Q == 14) {
@@ -1373,7 +1372,7 @@ hugel,168,183,1	script	Bismarc#BLS	118,{
 	}
 }
 
-ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
+morocc,95,133,4	script	Blacksmith Guildsman#moc	726,{
 	if (BSMITH_Q == 16) {
 		emotion ET_SCRATCH;
 		mes "[Mitehmaeeuh]";
@@ -1503,7 +1502,7 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 				if (select("Al De Baran:Alberta:Morocc:Izlude") == 2)
 					set .@blackss_te,.@blackss_te+20;
 				mes "[Mitehmaeeuh]";
-				mes "3. From the center of Einbroch,";
+				mes "3. From the center of Geffen,";
 				mes "in which direction is the Blacksmith Guild?";
 				next;
 				if (select("11 o'clock:5 o'clock:7 o'clock:12 o'clock") == 2)
@@ -1513,7 +1512,7 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 				mes "can you find the";
 				mes "most Blacksmiths?";
 				next;
-				if (select("Prontera:Morocc:Alberta:Einbroch") == 4)
+				if (select("Prontera:Morocc:Alberta:Geffen") == 4)
 					set .@blackss_te,.@blackss_te+20;
 				mes "[Mitehmaeeuh]";
 				mes "5. Which of the";
@@ -1578,67 +1577,15 @@ ein_in01,24,41,5	script	Blacksmith Guildsman#moc	726,{
 		close;
 	}
 	else {
+		mes "[Mitmayer]";
+		mes "Whew.... the sun in Morroc is just too strong.... I guess it will give me tougher skin... Oh well......";
 		emotion ET_SCRATCH;
-		mes "[Mitehmaeeuh]";
-		mes "I had to deal with the heat when I was in Morocc,";
-		mes "and now I have to deal with the smog in this Einbroch!";
 		next;
-		mes "[Mitehmaeeuh]";
-		mes "But, I must admit that this is the perfect place for Blacksmiths because we have an abundance of crafting material supplies as well as highly developed equipment.";
+		mes "[Mitmayer]";
+		mes "Afteralll, we Blacksmiths are used to high temperatures since we work with fire everyday!";
 		next;
-		mes "[Mitehmaeeuh]";
-		mes "We, Blacksmiths are trying our best to forge the best of the best weapons.";
-		next;
-		mes "[Mitehmaeeuh]";
-		mes "We pledge our honor on that!";
-		close;
-	}
-}
-
-geffen_in,109,170,3	script	Blacksmith Guildsman#gef	726,{
-	mes "[Blacksmith Guildsman]";
-	mes "Good day, are you here to visit Blacksmith Guild?";
-	next;
-	mes "[Blacksmith Guildsman]";
-	mes "I thank you for coming this far to visit our guild. However, I regret to inform you that Blacksmith Guild has been";
-	mes "moved to ^3131FF'Einbroch' in the Schwarzwald Republic^000000.";
-	next;
-	mes "[Blacksmith Guildsman]";
-	mes "You can travel to Schwarzwald Republic by using the airship.";
-	mes "I can provide you a teleport service to Izlude, where you can use the airship.";
-	mes "Would you like to move to Izlude immediately?";
-	next;
-	switch(select("How to go to Einbroch:Yes!:No, thanks.")) {
-	case 1:
-		mes "[Blacksmith Guildsman]";
-		mes "Oops, haven't you used the airship yet?";
-		next;
-		mes "[Blacksmith Guildsman]";
-		mes "Unlike Rune-Midgarts Kingdom, Schwarzwald Republic has 'the airship' instead of teleport services to move between towns.";
-		next;
-		mes "[Blacksmith Guildsman]";
-		mes "In ^3131FF'Izlude'^000000, you can use ^3131FF'the international airship'^000000 which travels between ^3131FFIzlude and Juno in Schwarzwald Republic^000000.";
-		next;
-		mes "[Blacksmith Guildsman]";
-		mes "Take the airship, and go to Juno. Then from Juno, you need to take ^3131FFthe domestic airship^000000 to go to Einbroch.";
-		mes "Remember, you are ^3131FFnot going outside of the airport^000000 upon transit from the international to the domestic airship.";
-		next;
-		mes "[Blacksmith Guildsman]";
-		mes "It might sound complicated, but you will know once you are in the airport.";
-		mes "When you arrive in Blacksmith Guild, please send my regard to my coworkers!";
-		close;
-	case 2:
-		if (Zeny < 600) {
-			mes "[Blacksmith Guildsman]";
-			mes "Excuse me, but you do not have enough money.";
-			close;
-		}
-		set Zeny, Zeny-600;
-		warp "izlude",94,103;
-		end;
-	case 3:
-		mes "[Blacksmith Guildsman]";
-		mes "Please take care!";
+		mes "[Mitmayer]";
+		mes "Getting nice and tan isn't so bad..... I think it gives you a healthy athletic look.";
 		close;
 	}
 }
