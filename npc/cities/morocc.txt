@@ -29,7 +29,7 @@
 
 // Morocc
 //============================================================
-morocc,68,260,0	script	Towner#Spencer	99,{
+morocc,68,260,4	script	Towner#Spencer	99,{
 	switch(rand(3)) {
 	case 1:
 	case 2:
@@ -204,7 +204,7 @@ morocc,68,260,0	script	Towner#Spencer	99,{
 	}
 }
 	
-morocc,116,266,0	script	Towner#moc	85,{
+morocc,116,266,6	script	Towner#moc	85,{
 	if (BaseLevel > 98) {
 		mes "[Ogleson]";
 		mes "Oh man...";
@@ -228,7 +228,7 @@ morocc,116,266,0	script	Towner#moc	85,{
 	close;
 }
 
-morocc,208,85,0	script	Towner#2moc	83,{
+morocc,208,85,6	script	Towner#2moc	83,{
 	mes "[Silas]";
 	mes "I work in the trading business, so I always have to cross the hot, dry Morocc Desert on business.";
 	next;
@@ -246,7 +246,7 @@ morocc,208,85,0	script	Towner#2moc	83,{
 	close;
 }
 
-morocc,150,50,0	script	Towner#3moc	99,{
+morocc,150,50,6	script	Towner#3moc	99,{
 	mes "[Lapidary]";
 	mes "The undisputed queen of jewels has to be the Diamond. After looking at it just once, no one can deny its beauty.";
 	next;
