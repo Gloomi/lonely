@@ -1,0 +1,250 @@
+//===== Daily Quest Board
+//============================================================
+
+prontera,155,195,4	script	Mission Board#DQB	2_BULLETIN_BOARD,{
+	for ( .@i = 100031; .@i < 100056; .@i++ )								//delete timer for cd quest
+		if (checkquest(.@i,PLAYTIME) == 2) erasequest .@i;
+	for ( .@i = 100031; .@i < 100056; .@i++ )
+		if (checkquest(.@i) >= 0) {
+			mes "[Notice!]";
+			mes "Due to limited number of missions";
+			mes "and to give a fair chance to everyone,";
+			mes "adventurers will only be allowed to";
+			mes "participate once in every given day.";
+			mes "- ^FF007F [The Guild] ^000000";
+			close;
+	}
+	for( .@i = 100001; .@i < 100031; .@i++ ) {							//check for active completed q
+		.@j = checkquest(.@i,HUNTING);
+		if (.@j == 2) {
+			mes "[Notice!]";
+			mes "Adventurers must ensure to complete";
+			mes "their given mission and collect their";
+			mes "rewards before taking up a new one.";
+			mes "- ^FF007F [The Guild] ^000000";
+			close;
+		}
+		else if (.@j >= 0) {											//check for ongoing q
+			mes "[Notice!]";
+			mes "All adventurers will only be allowed to";
+			mes "take one quest at a time.";
+			mes "- ^FF007F [The Guild]";
+			close;
+		}
+	}
+	if (BaseLevel < 11) {												//check for min blevel
+		mes "[ ^0000FF" + strcharinfo(0) + "^000000 ]";
+		mes "Hmmm... it seems like all";
+		mes "quests here are too advanced";
+		mes "for my current level.";
+		mes "I should come back later.";
+		close;
+	}
+	if (BaseLevel < 26) goto L_25;	//beginner
+	if (BaseLevel < 41) goto L_40;	//skilled
+	if (BaseLevel < 56) goto L_55;	//intermediate
+	if (BaseLevel < 71) goto L_70;	//experienced
+	if (BaseLevel < 86) goto L_85;	//advanced
+	mes " - Daily Quest Board - ";
+	mes "Here is the list of quests";
+	mes "commissioned by ^FF007F [The Guild] ^000000 for";
+	mes "^7F00FF Expert ^000000 adventurers:";
+	next;
+	switch(select("Minorous Hunting:Pasana Hunting:Grand Peco Hunting:Solider Hunting:Stalactic Golem Hunting:Cancel")) {
+		case 1: callsub L_Quest,100021,"Minorous Hunting"," - Objective: Hunt 50 ^4d4dffMinorous^000000 ";
+		case 2: callsub L_Quest,100022,"Pasana Hunting"," - Objective: Hunt 50 ^4d4dffPasana^000000";
+		case 3: callsub L_Quest,100023,"Grand Peco Hunting"," - Objective: Hunt 50 ^4d4dffGrand Peco^000000";
+		case 4: callsub L_Quest,100024,"Solider Hunting"," - Objective: Hunt 50 ^4d4dffSolider^000000";
+		case 5: callsub L_Quest,100025,"Stalactic Golem Hunting"," - Objective: Hunt 50 ^4d4dffStalactic Golem^000000";
+		case 6:
+			close;
+	}
+
+L_25:
+	mes " - Daily Quest Board - ";
+	mes "Here is the list of quests";
+	mes "commissioned by ^FF007F [The Guild] ^000000 for";
+	mes "adventurers of ^0080FF Beginner ^000000 rank:";
+	next;
+	switch(select("Mandragora Hunting:Spore Hunting:Muka Hunting:Zombie Hunting:Cancel")) {
+		case 1: callsub L_Quest,100001,"Mandragora Hunting"," - Objective: Hunt 50 ^4d4dffMandragora^000000";
+		case 2: callsub L_Quest,100002,"Spore Hunting"," - Objective: Hunt 50 ^4d4dffSpore^000000";
+		case 3: callsub L_Quest,100003,"Muka Hunting"," - Objective: Hunt 50 ^4d4dffMuka^000000";
+		case 4: callsub L_Quest,100004,"Zombie Hunting"," - Objective: Hunt 50 ^4d4dffZombie^000000";
+		case 5:
+			close;
+	}
+
+L_40:
+	mes " - Daily Quest Board - ";
+	mes "Here is the list of quests";
+	mes "commissioned by ^FF007F [The Guild] ^000000 for";
+	mes "^00CC00 Skilled ^000000 adventurers:";
+	next;
+	switch(select("Bigfoot Hunting:Flora Hunting:Caramel Hunting:Orc Zombie Hunting:Cancel")) {
+		case 1: callsub L_Quest,100005,"Bigfoot Hunting"," - Objective: Hunt 50 ^4d4dffBigfoot^000000";
+		case 2: callsub L_Quest,100006,"Flora Hunting"," - Objective: Hunt 50 ^4d4dffFlora^000000";
+		case 3: callsub L_Quest,100007,"Caramel Hunting"," - Objective: Hunt 50 ^4d4dffCaramel^000000";
+		case 4: callsub L_Quest,100008,"Orc Zombie Hunting"," - Objective: Hunt 50 ^4d4dffOrc Zombie^000000";
+		case 5:
+			close;
+	}
+
+L_55:
+	mes " - Daily Quest Board - ";
+	mes "Here is the list of quests";
+	mes "commissioned by ^FF007F [The Guild] ^000000 for";
+	mes "^CCCC00 Intermediate ^000000 adventurers:";
+	next;
+	switch(select("Hode Hunting:Mantis Hunting:Thara Frog Hunting:Soldier Skeleton Hunting:Cancel")) {
+		case 1: callsub L_Quest,100009,"Hode Hunting"," - Objective: Hunt 50 ^4d4dffHode^000000";
+		case 2: callsub L_Quest,100010,"Mantis Hunting"," - Objective: Hunt 50 ^4d4dffMantis^000000";
+		case 3: callsub L_Quest,100011,"Thara Frog Hunting"," - Objective: Hunt 50 ^4d4dffThara Frog^000000";
+		case 4: callsub L_Quest,100012,"Soldier Skeleton Hunting"," - Objective: Hunt 50 ^4d4dffSoldier Skeleton^000000";
+		case 5:
+			close;
+	}
+
+L_70:
+	mes " - Daily Quest Board - ";
+	mes "Here is the list of quests";
+	mes "commissioned by ^FF007F [The Guild] ^000000 for";
+	mes "^FF8000 Experienced ^000000 adventurers:";
+	next;
+	switch(select("Greatest General Hunting:Obeaune Hunting:Sandman Hunting:Bongun Hunting:Cancel")) {
+		case 1: callsub L_Quest,100013,"Greatest General Hunting"," - Objective: Hunt 50 ^4d4dffGreatest General^000000";
+		case 2: callsub L_Quest,100014,"Obeaune Hunting"," - Objective: Hunt 50 ^4d4dffObeaune^000000";
+		case 3: callsub L_Quest,100015,"Sandman Hunting"," - Objective: Hunt 50 ^4d4dffSandman^000000";
+		case 4: callsub L_Quest,100016,"Bongun Hunting"," - Objective: Hunt 50 ^4d4dffBongun^000000";
+		case 5:
+			close;
+	}
+
+L_85:
+	mes " - Daily Quest Board - ";
+	mes "Here is the list of quests";
+	mes "commissioned by ^FF007F [The Guild] ^000000 for";
+	mes "^FF0000 Advanced ^000000 adventurers:";
+	next;
+	switch(select("Geographer Hunting:High Orc Hunting:Alligator Hunting:Injustice Hunting:Cancel")) {
+		case 1: callsub L_Quest,100017,"Geographer Hunting"," - Objective: Hunt 50 ^4d4dffGeographer^000000";
+		case 2: callsub L_Quest,100018,"High Orc Hunting"," - Objective: Hunt 50 ^4d4dffHigh Orc^000000";
+		case 3: callsub L_Quest,100019,"Alligator Hunting"," - Objective: Hunt 50 ^4d4dffAlligator^000000";
+		case 4: callsub L_Quest,100020,"Injustice Hunting"," - Objective: Hunt 50 ^4d4dffInjustice^000000";
+		case 5:
+			close;
+	}
+	
+
+L_Quest:
+	mes " - Mission: '"+ getarg(1) +"' - ";
+	next;
+	for ( .@i = 2; .@i < getargcount(); .@i++ )
+		mes getarg(.@i);
+	next;
+	if (select("I will do this mission.:Look for other missions.") == 2) {
+		mes "[ ^0000FF" + strcharinfo(0) + "^000000 ]";
+		mes "~Let's see if there are better ones.";
+		close;
+	}
+	for ( .@i = 2; .@i < getargcount(); .@i++ )
+		mes getarg(.@i);
+	setquest getarg(0);
+	close;
+}
+
+prt_in,38,104,6	script	Aurora	4_F_SHALOSH,{
+	for( .@i = 100001; .@i < 100031; .@i++ ) {
+		.@j = checkquest(.@i,HUNTING);
+		if (.@j == 2) {
+			switch(.@i) {
+				case 100001: callsub L_Quest,.@i,"Mandragora Hunting",2250,1600;
+				case 100002: callsub L_Quest,.@i,"Spore Hunting",3300,5400;
+				case 100003: callsub L_Quest,.@i,"Muka Hunting",13650,6000;
+				case 100004: callsub L_Quest,.@i,"Zombie Hunting",2500,1650;
+				case 100005: callsub L_Quest,.@i,"Bigfoot Hunting",15500,9400;
+				case 100006: callsub L_Quest,.@i,"Flora Hunting",17859,11300;
+				case 100007: callsub L_Quest,.@i,"Caramel Hunting",13200,8100;
+				case 100008: callsub L_Quest,.@i,"Orc Zombie Hunting",9800,6000;
+				case 100009: callsub L_Quest,.@i,"Hode Hunting",27500,15000;
+				case 100010: callsub L_Quest,.@i,"Mantis Hunting",19650,12400;
+				case 100011: callsub L_Quest,.@i,"Thara Frog Hunting",10950,6900;
+				case 100012: callsub L_Quest,.@i,"Soldier Skeleton Hunting",18600,11300;
+				case 100013: callsub L_Quest,.@i,"Greatest General Hunting",61900,37600;
+				case 100014: callsub L_Quest,.@i,"Obeaune Hunting",32200,20350;
+				case 100015: callsub L_Quest,.@i,"Sandman Hunting",40500,24600;
+				case 100016: callsub L_Quest,.@i,"Bongun Hunting",21200,12100;
+				case 100017: callsub L_Quest,.@i,"Geographer Hunting",135750,100000;
+				case 100018: callsub L_Quest,.@i,"High Orc Hunting",180900,81950;
+				case 100019: callsub L_Quest,.@i,"Alligator Hunting",68950,43300;
+				case 100020: callsub L_Quest,.@i,"Injustice Hunting",105900,74400;
+				case 100021: callsub L_Quest,.@i,"Minorous Hunting",137500,68950;
+				case 100022: callsub L_Quest,.@i,"Pasana Hunting",204250,106750;
+				case 100023: callsub L_Quest,.@i,"Grand Peco Hunting",119350,68050;
+				case 100024: callsub L_Quest,.@i,"Solider Hunting",222900,97550;
+				case 100025: callsub L_Quest,.@i,"Stalactic Golem Hunting",290400,134750;
+			}
+		}
+		else if (.@j >= 0) {
+			mes "[Aurora]";
+			mes "Hello! How is your mission going?";
+			mes "Make sure to report your progress here";
+			mes "once you are done.";
+			mes "Good luck!";
+			close;
+		}
+	}
+	mes "[Aurora]";
+	mes "Hi! ^FF007F [The Guild] ^000000 is opening up";
+	mes "its doors to help adventureres.";
+	next;
+	mes "[Aurora]";
+	mes "I'm sure someone like you will also find";
+	mes "a mission you will be interested to take.";
+	close;
+
+L_Quest:
+	.@quest_id = getarg(0);
+	if (checkquest(.@quest_id,HUNTING) == 2) {
+		.@item_req = getarg(4,0);
+		.@req_amount = getarg(5,0);
+		if (.@item_req) {
+			if (countitem(.@item_req) < .@req_amount) {
+				mes "[Aurora]";
+				mes "You don't have enough "+ getitemname(.@item_req) +".";
+				mes "You need to bring "+ .@req_amount +" "+ getitemname(.@item_req) +".";
+				close;
+			}
+		}
+		mes "[Aurora]";
+		mes "Good day! Are you here to report about your mission?";
+		next;
+		mes "[Aurora]";
+		mes "Let's see...";
+		next;
+		mes "[Aurora]";
+		mes "Adventurer ^0000FF" + strcharinfo(0) + "^000000 for the '"+ getarg(1) +"' quest...";
+		next;
+		mes "[Aurora]";
+		mes "Alright!";
+		mes "Mission success is verified.";
+		next;
+		mes "[Aurora]";
+		mes "Good work! ^FF007F [The Guild] ^000000 sends its gratitude for your service.";
+		mes "Here are your rewards:";
+		next;
+		if (.@item_req)
+			delitem .@item_req,.@req_amount;
+		erasequest .@quest_id;
+		setquest .@quest_id+30;
+		getexp getarg(2),getarg(3);
+		getitem 2000000,1;
+		close;
+	}
+}
+/*
+prt_in,43,110,4	script	QuestDeleterTest	2_BULLETIN_BOARD,{
+	for ( .@i = 100031; .@i < 100056; .@i++ )
+		if (checkquest(.@i) >= 0) erasequest .@i;
+	}
+*/
