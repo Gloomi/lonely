@@ -188,10 +188,40 @@ prt_in,38,104,6	script	Aurora	4_F_SHALOSH,{
 		else if (.@j >= 0) {
 			mes "[Aurora]";
 			mes "Hello! How is your mission going?";
-			mes "Make sure to report your progress here";
-			mes "once you are done.";
-			mes "Good luck!";
-			close;
+			mes "Can I help you with anything?";
+			next;
+			switch(select("Nothing for now:Give up quest")) {
+				case 1:
+					mes "[Aurora]";
+					mes "Okay~ just make sure to report your";
+					mes "progress here once you are done.";
+					mes "Good luck!";
+					close;
+				case 2:
+					mes "[Aurora]";
+					mes "Oh. Do you find your mission too";
+					mes "hard for you to handle?";
+					mes "Are you sure you want to give up";
+					mes "you current quest?";
+					next;
+					switch(select("Yes:Wait, no!")) {
+						case 1:
+							mes "[Aurora]";
+							mes "Alright, I will update the records";
+							mes "for this quest.";
+							mes "Just check the postings from time";
+							mes "to time and you might find a more";
+							mes "suitable mission for you.";
+							erasequest .@i;
+							setquest .@i+30;
+							close;
+						case 2:
+							mes "[Aurora]";
+							mes "That's the spirit! Just keep on";
+							mes "going, I believe you can do it!";
+							close;
+					}
+			}
 		}
 	}
 	mes "[Aurora]";
@@ -223,11 +253,13 @@ L_Quest:
 		mes "Let's see...";
 		next;
 		mes "[Aurora]";
-		mes "Adventurer ^0000FF" + strcharinfo(0) + "^000000 for the '"+ getarg(1) +"' quest...";
+		mes "Adventurer ^0000FF" + strcharinfo(0) + "^000000 reporting";
+		mes "for the '"+ getarg(1) +"' quest...";
 		next;
 		mes "[Aurora]";
 		mes "Alright!";
-		mes "Mission success is verified.";
+		mes "Everything looks settled. The mission";
+		mes "success is verified.";
 		next;
 		mes "[Aurora]";
 		mes "Good work! ^FF007F [The Guild] ^000000 sends its gratitude for your service.";
@@ -238,8 +270,11 @@ L_Quest:
 		erasequest .@quest_id;
 		setquest .@quest_id+30;
 		getexp getarg(2),getarg(3);
-		getitem 2000000,1;
-		close;
+		if (BaseLevel > 85)
+			getitem 2000000,2;
+		else
+			getitem 2000000,1;
+			close;
 	}
 }
 /*
