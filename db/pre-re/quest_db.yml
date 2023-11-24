@@ -7113,9 +7113,9 @@ Body:
       - Mob: SPORE
         Count: 50
   - Id: 100003
-    Title: "Mission : Hunt Muka"
+    Title: "Mission : Hunt Wormtail"
     Targets:
-      - Mob: MUKA
+      - Mob: WORM_TAIL
         Count: 50
   - Id: 100004
     Title: "Mission : Hunt Zombie"
@@ -7148,19 +7148,19 @@ Body:
       - Mob: HODE
         Count: 50
   - Id: 100010
-    Title: "Mission : Hunt Mantis"
+    Title: "Mission : Hunt Obeaune"
     Targets:
-      - Mob: MANTIS
+      - Mob: OBEAUNE
         Count: 50
   - Id: 100011
-    Title: "Mission : Hunt Thara Frog"
+    Title: "Mission : Hunt Sohee"
     Targets:
-      - Mob: THARA_FROG
+      - Mob: SOHEE
         Count: 50
   - Id: 100012
-    Title: "Mission : Hunt Soldier Skeleton"
+    Title: "Mission : Hunt Munak"
     Targets:
-      - Mob: SOLDIER_SKELETON
+      - Mob: MUNAK
         Count: 50
   - Id: 100013
     Title: "Mission : Hunt Greatest General"
@@ -7168,19 +7168,19 @@ Body:
       - Mob: GREATEST_GENERAL
         Count: 50
   - Id: 100014
-    Title: "Mission : Hunt Obeaune"
+    Title: "Mission : Hunt Alligator"
     Targets:
-      - Mob: OBEAUNE
+      - Mob: ALLIGATOR
         Count: 50
   - Id: 100015
-    Title: "Mission : Hunt Sandman"
+    Title: "Mission : Hunt Argiope"
     Targets:
-      - Mob: SAND_MAN
+      - Mob: ARGIOPE
         Count: 50
   - Id: 100016
-    Title: "Mission : Hunt Bongun"
+    Title: "Mission : Hunt Ghoul"
     Targets:
-      - Mob: BON_GUN
+      - Mob: GHOUL
         Count: 50
   - Id: 100017
     Title: "Mission : Hunt Geographer"
@@ -7188,14 +7188,14 @@ Body:
       - Mob: GEOGRAPHER
         Count: 50
   - Id: 100018
-    Title: "Mission : Hunt High Orc"
+    Title: "Mission : Hunt Minorous"
     Targets:
-      - Mob: HIGH_ORC
+      - Mob: MINOROUS
         Count: 50
   - Id: 100019
-    Title: "Mission : Hunt Alligator"
+    Title: "Mission : Hunt Grand Peco"
     Targets:
-      - Mob: ALLIGATOR
+      - Mob: GRAND_PECO
         Count: 50
   - Id: 100020
     Title: "Mission : Hunt Injustice"
@@ -7203,9 +7203,9 @@ Body:
       - Mob: INJUSTICE
         Count: 50
   - Id: 100021
-    Title: "Mission : Hunt Minorous"
+    Title: "Mission : Hunt Sleeper"
     Targets:
-      - Mob: MINOROUS
+      - Mob: SLEEPER
         Count: 50
   - Id: 100022
     Title: "Mission : Hunt Pasana"
@@ -7213,9 +7213,9 @@ Body:
       - Mob: PASANA
         Count: 50
   - Id: 100023
-    Title: "Mission : Hunt Grand Peco"
+    Title: "Mission : Hunt High Orc"
     Targets:
-      - Mob: GRAND_PECO
+      - Mob: HIGH_ORC
         Count: 50
   - Id: 100024
     Title: "Mission : Hunt Solider"
@@ -7234,7 +7234,7 @@ Body:
     Title: "Mission : Hunt Spore - Complete"
     TimeLimit: +20h
   - Id: 100033
-    Title: "Mission : Hunt Muka - Complete"
+    Title: "Mission : Hunt Wormtail - Complete"
     TimeLimit: +20h
   - Id: 100034
     Title: "Mission : Hunt Zombie - Complete"
@@ -7255,46 +7255,46 @@ Body:
     Title: "Mission : Hunt Hode - Complete"
     TimeLimit: +20h
   - Id: 100040
-    Title: "Mission : Hunt Mantis - Complete"
+    Title: "Mission : Hunt Obeaune - Complete"
     TimeLimit: +20h
   - Id: 100041
-    Title: "Mission : Hunt Thara Frog - Complete"
+    Title: "Mission : Hunt Sohee - Complete"
     TimeLimit: +20h
   - Id: 100042
-    Title: "Mission : Hunt Soldier Skeleton - Complete"
+    Title: "Mission : Hunt Munak - Complete"
     TimeLimit: +20h
   - Id: 100043
     Title: "Mission : Hunt Greatest General - Complete"
     TimeLimit: +20h
   - Id: 100044
-    Title: "Mission : Hunt Obeaune - Complete"
+    Title: "Mission : Hunt Alligator - Complete"
     TimeLimit: +20h
   - Id: 100045
-    Title: "Mission : Hunt Sandman - Complete"
+    Title: "Mission : Hunt Argiope - Complete"
     TimeLimit: +20h
   - Id: 100046
-    Title: "Mission : Hunt Bongun - Complete"
+    Title: "Mission : Hunt Ghoul - Complete"
     TimeLimit: +20h
   - Id: 100047
     Title: "Mission : Hunt Geographer - Complete"
     TimeLimit: +20h
   - Id: 100048
-    Title: "Mission : Hunt High Orc - Complete"
+    Title: "Mission : Hunt Minorous - Complete"
     TimeLimit: +20h
   - Id: 100049
-    Title: "Mission : Hunt Alligator - Complete"
+    Title: "Mission : Hunt Grand Peco - Complete"
     TimeLimit: +20h
   - Id: 100050
     Title: "Mission : Hunt Injustice - Complete"
     TimeLimit: +20h
   - Id: 100051
-    Title: "Mission : Hunt Minorous - Complete"
+    Title: "Mission : Hunt Sleeper - Complete"
     TimeLimit: +20h
   - Id: 100052
     Title: "Mission : Hunt Pasana - Complete"
     TimeLimit: +20h
   - Id: 100053
-    Title: "Mission : Hunt Grand Peco - Complete"
+    Title: "Mission : Hunt High Orc - Complete"
     TimeLimit: +20h
   - Id: 100054
     Title: "Mission : Hunt Solider - Complete"
