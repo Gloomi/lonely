@@ -740,7 +740,7 @@ alberta_in,174,22,4	script	Guildsman#alberta	63,{
 					next;
 					mes "[Geschupenschte]";
 					mes "Anyway, take this";
-					mes "to ^8E6B23Krongast^000000 in Lighthalzen";
+					mes "to ^8E6B23Krongast^000000 in Izlude";
 					break;
 				case 12:
 					mes "Okay, now take this to ^8E6B23Talpiz^000000 in Payon of Rune-Midgarts Kingdom. Simply deliver this and bring me the receipt.";
@@ -794,7 +794,7 @@ alberta_in,174,22,4	script	Guildsman#alberta	63,{
 					next;
 					mes "[Geschupenschte]";
 					mes "Anyway, take this";
-					mes "to ^8E6B23Bismarc^000000 in Hugel";
+					mes "to ^8E6B23Bismarc^000000 in Comodo";
 				}
 				mes "and don't forget";
 				mes "the receipt!";
